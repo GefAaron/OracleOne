@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+<script>
+	var contador = 1;
+    var intentos = 3;
+    var inicioDeSesionRegistrado = "alura";
+    var contrasenhaRegistrada = "alura321";
+    
+
+
+
+	while(contador <= 3 ){
+		var inicioDeSesionIngresado = prompt("Ingrese su usuario");
+    	var contrasenhaIngresada = prompt("Ingrese su contraseña");
+	if( inicioDeSesionRegistrado == inicioDeSesionIngresado && contrasenhaRegistrada == contrasenhaIngresada ) {
+        alert("Bienvenido al sistema " + inicioDeSesionIngresado);
+        
+    } else {    
+    		if(contador==3){ 	
+        alert("Perdio sus 3 intentos");
+    }else{
+        alert("Siga intentando todavía tiene " + (intentos-contador) + " intentos disponibles");
+        }
+    }
+    contador++;
+    }
+
+    document.write("Usted agoto sus 3 intentos de inicio de sesión")
+
+</script>

@@ -1,0 +1,71 @@
+<meta charset="UTF-8">
+
+<h1>Tablas de multiplicar</h1>
+
+<script>
+
+		function saltarLinea() {
+
+			document.write("<br>");	
+			document.write("<br>");	
+			
+
+		}  
+
+			function imprimir(frase) {
+
+		document.write(frase);
+		saltarLinea();
+
+				}
+
+				var tablaUsuario = parseInt(prompt("Ingrese la tabla que quiere"));;
+
+				var  multiplicador = parseInt(1);
+
+
+		while (multiplicador<=10){
+
+			imprimir(tablaUsuario + " " + " x " + multiplicador + " = " +(tablaUsuario*multiplicador));
+			multiplicador=multiplicador+1;
+
+			
+			}
+					imprimir("Código con while: <br> ")
+			for(var  multiplicador = parseInt(1);multiplicador<=10;multiplicador=multiplicador+1){
+
+				imprimir(tablaUsuario + " " + " x " + multiplicador + " = " +(tablaUsuario*multiplicador));
+			}
+			imprimir("Fin")
+
+
+</script>
+
+Codigo para while: <br>
+while (multiplicador<=10){<br>
+
+			imprimir(tablaUsuario + " " + " x " + multiplicador + " = " <br>+(tablaUsuario*multiplicador));<br>
+			multiplicador=multiplicador+1;<br>
+			}<br><br>
+Codigo para for: <br>
+for(var  multiplicador = parseInt(1);multiplicador<=10;multiplicador=multiplicador+1){<br>
+				imprimir(tablaUsuario + " " + " x " + multiplicador + " = " <br>+(tablaUsuario*multiplicador));<br>
+			}<br><br>
+
+			<h2>Se puede ahorrar el +1 del codigo con declarar la var multiplicador++ </h2>
+			Ejemplo:  var contador = 1<br>
+			while(contador <= 10) {<br>
+    imprimir("Contador actual: " + contador);<br>
+    contador++;<br>
+    }<br>
+
+<script>
+
+var contador = 1;
+
+while(contador <= 10) {
+    imprimir("Contador actual: " + contador);
+    contador++;
+}
+
+</script>

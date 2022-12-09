@@ -1,0 +1,48 @@
+<meta charset="UTF-8">
+
+<h1>PROGRAMA PARA CALCULAR Puntos de equipo de Basketball</h1>
+
+<script>
+
+	function saltarLinea() {
+
+		document.write("<br>");	
+		document.write("<br>");	
+		document.write("<br>");	
+
+	}  
+
+	function imprimir(frase) 
+	{
+		document.write(frase);
+		saltarLinea();
+	}
+
+	var victorias = parseInt(prompt("Informe cantidad de victorias"))
+	var empates = parseInt(prompt("Informe cantidad de empates"))
+	var anoAnterior =parseInt(prompt("Ingrese puntaje del año anterior"))
+
+	var puntosTotal = (victorias*3) + empates;
+
+	imprimir("<h2>El objetivo es cambiar variables recibidas en prompt de string a numero </h2>")
+
+	imprimir("Las variables serán transformaas con parseInt(variable o parametro aquí)")
+	imprimir("Puntaje del equipo : " + puntosTotal)
+	imprimir("Puntaje del año anterior : " + anoAnterior)
+
+
+		if (puntosTotal > anoAnterior) {
+	imprimir("El equipo mejoró")
+}
+
+		if (puntosTotal < anoAnterior){
+	imprimir("El equipo empeoró")
+	}
+		if (puntosTotal === anoAnterior){
+	imprimir("El equipo no mejoró ni empeoró")
+	}
+
+
+</script>
+
+
