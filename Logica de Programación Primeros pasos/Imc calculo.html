@@ -1,0 +1,45 @@
+<meta charset="UTF-8">
+
+<h1>Pedir fecha de nacimiento y sumarla</h1>
+
+<script>
+
+	function saltarLinea()
+	{
+		document.write("<br>");
+	}
+
+	function imprimir(frase)
+	{
+		document.write(frase);
+		saltarLinea();
+	}
+
+	
+
+	function sumaFecha(dia,mes,ao)
+	{		 
+		 return (dia + mes + ao);		
+	}
+		
+	 
+	diadeNacimiento= parseInt(prompt("día en el que nacio"))
+    mesdeNacimiento = parseInt(prompt("mes en el que nacio"))
+    añodeNacimiento = parseInt(prompt("año en el que nacio"))
+    
+
+   fechaNacimiento = sumaFecha(diadeNacimiento,mesdeNacimiento,añodeNacimiento)
+
+	imprimir(diadeNacimiento + "/" + mesdeNacimiento+ "/" + añodeNacimiento)
+
+    imprimir("La suma de su fecha de nacimiento es " + fechaNacimiento);
+
+
+</script>
+
+
+	
+    
+	
+	
+
